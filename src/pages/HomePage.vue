@@ -1,4 +1,5 @@
 <script setup lang='ts'>
+import BgText from '@/components/BgText.vue';
 import LangFlags from '@/components/LangFlags.vue';
 import LogoElement from '@/components/LogoElement.vue';
 import MainTitle from '@/components/MainTitle.vue';
@@ -10,6 +11,7 @@ import YellowCircle from '@/components/YellowCircle.vue';
 </script>
 <template>
     <div class="home-page">
+        <BgText />
         <YellowCircle />
         <div class="home-page__content">
             <header class="flex">
@@ -30,6 +32,9 @@ import YellowCircle from '@/components/YellowCircle.vue';
 <style scoped lang='scss'>
     .home-page {
         background: #bebebe;
+        position: relative;
+        overflow: hidden;
+        user-select: none;
         
         &__content {
             position: relative;
