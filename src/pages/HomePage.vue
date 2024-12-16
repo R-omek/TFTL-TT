@@ -12,14 +12,18 @@ import YellowCircle from '@/components/YellowCircle.vue';
     <div class="home-page">
         <YellowCircle />
         <div class="home-page__content">
-            <div class="flex">
+            <header class="flex">
                 <LangFlags />
                 <LogoElement class="w-full" />
-            </div>
-            <MainTitle />
-            <WhereLink />
-            <WhatLink />
-            <WhoLink />
+            </header>
+            <main class="flex-grow-1 flex flex-column justify-content-center">
+                <MainTitle />
+                <WhereLink />
+                <WhatLink />
+            </main>
+            <footer class="flex justify-content-center">
+                <WhoLink />
+            </footer>
         </div>
     </div>
 </template>

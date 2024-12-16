@@ -12,12 +12,34 @@ const router = createRouter({
     {
       path: '/some-page',
       name: 'some-page',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('@/pages/SomePage.vue'),
     },
   ],
 })
+
+let isFirstLoad = true;
+
+router.beforeEach((to, from, next) => {
+  const overlay = document.querySelector('.overlay');
+  if (overlay && !isFirstLoad) {
+    overlay.classList.add('active');
+    setTimeout(() => {
+      next();
+    }, 400);
+  } else {
+    next();
+    isFirstLoad = false;
+  }
+});
+
+router.afterEach(() => {
+  const overlay = document.querySelector('.overlay');
+  if (overlay) {
+    overlay.classList.add('hide');
+    setTimeout(() => {
+      overlay.classList.remove('active', 'hide');
+    }, 400);
+  }
+});
 
 export default router

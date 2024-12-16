@@ -1,10 +1,11 @@
 <script setup lang='ts'>
+import { useWindowSize } from '@vueuse/core';
+
+const { width } = useWindowSize();
 </script>
 <template>
-    <div class="flex-grow-1">
-        <h1 class="main-title flex align-items-center justify-content-center h-full text-center">FULL-CYCLE <br> EVENT AGENCY
-        </h1>
-    </div>
+    <h1 class="main-title flex align-items-center justify-content-center h-full text-center">FULL-CYCLE <br> EVENT <br v-if="width < 768"> AGENCY
+    </h1>
 </template>
 <style scoped lang='scss'>
 .main-title {
