@@ -1410,6 +1410,11 @@ pretty-ms@^9.0.0:
   dependencies:
     parse-ms "^4.0.0"
 
+primeflex@^3.3.1:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/primeflex/-/primeflex-3.3.1.tgz#361dddf6eb5db50d733e4cddd4b6e376a3d7bd68"
+  integrity sha512-zaOq3YvcOYytbAmKv3zYc+0VNS9Wg5d37dfxZnveKBFPr7vEIwfV5ydrpiouTft8MVW6qNjfkaQphHSnvgQbpQ==
+
 read-package-json-fast@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/read-package-json-fast/-/read-package-json-fast-4.0.0.tgz#8ccbc05740bb9f58264f400acc0b4b4eee8d1b39"
