@@ -1,5 +1,6 @@
 <script setup lang='ts'>
 import BgText from '@/components/BgText.vue';
+import BurgerMenu from '@/components/BurgerMenu.vue';
 import LangFlags from '@/components/LangFlags.vue';
 import LogoElement from '@/components/LogoElement.vue';
 import MainTitle from '@/components/MainTitle.vue';
@@ -19,6 +20,7 @@ import YellowCircle from '@/components/YellowCircle.vue';
             <header class="flex">
                 <LangFlags />
                 <LogoElement class="w-full" />
+                <BurgerMenu />
             </header>
             <main class="flex-grow-1 flex flex-column justify-content-center">
                 <MainTitle />

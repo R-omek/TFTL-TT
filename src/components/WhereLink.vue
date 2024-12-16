@@ -12,6 +12,10 @@
     justify-content: start;
     align-items: start;
 
+    @media (max-width: 575px) {
+        display: none;
+    }
+
     &__link {
         display: inline-block;
         transform: rotate(-90deg) translateY(-200%);
